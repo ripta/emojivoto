@@ -1,6 +1,6 @@
 module github.com/buoyantio/emojivoto
 
-go 1.13
+go 1.21
 
 require (
 	contrib.go.opencensus.io/exporter/ocagent v0.7.0
