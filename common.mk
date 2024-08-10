@@ -15,7 +15,7 @@ PROTOC ?= ../bin/protoc
 protoc:
 	$(PROTOC) -I .. ../proto/*.proto --go_out=paths=source_relative:./gen --go-grpc_out=paths=source_relative:./gen
 
-package: protoc compile build-container
+package: protoc compile
 
 build-container:
 	docker build .. -t "buoyantio/$(svc_name):$(IMAGE_TAG)" --build-arg svc_name=$(svc_name)
