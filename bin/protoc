@@ -2,16 +2,19 @@
 
 set -eu
 
+arch=$(uname -m)
 if [ "$(uname -s)" = Darwin ]; then
   os=osx
+  if [ "$arch" = arm64 ]; then
+    arch=aarch_64
+  fi
 else
   os=linux
 fi
-arch=$(uname -m)
 
 bindir=$( cd "${0%/*}" && pwd )
 targetbin=$( cd "$bindir"/.. && pwd )/target/bin
-protocversion=3.18.0
+protocversion=27.3
 protocbin=$targetbin/protoc-$protocversion
 protocurl=https://github.com/google/protobuf/releases/download/v$protocversion/protoc-$protocversion-$os-$arch.zip
 
