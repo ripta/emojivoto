@@ -7,9 +7,10 @@ toolchain go1.23.4
 require (
 	contrib.go.opencensus.io/exporter/ocagent v0.7.0
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
-	github.com/prometheus/client_golang v1.20.5
+	github.com/prometheus/client_golang v1.23.2
 	go.opencensus.io v0.24.0
 	google.golang.org/grpc v1.70.0
+	google.golang.org/protobuf v1.36.8
 )
 
 require (
@@ -19,17 +20,16 @@ require (
 	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.0 // indirect
-	github.com/klauspost/compress v1.17.11 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/prometheus/client_model v0.6.1 // indirect
-	github.com/prometheus/common v0.62.0 // indirect
-	github.com/prometheus/procfs v0.15.1 // indirect
-	golang.org/x/net v0.38.0 // indirect
-	golang.org/x/sync v0.12.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
-	golang.org/x/text v0.23.0 // indirect
+	github.com/prometheus/client_model v0.6.2 // indirect
+	github.com/prometheus/common v0.66.1 // indirect
+	github.com/prometheus/procfs v0.16.1 // indirect
+	go.yaml.in/yaml/v2 v2.4.2 // indirect
+	golang.org/x/net v0.43.0 // indirect
+	golang.org/x/sync v0.16.0 // indirect
+	golang.org/x/sys v0.35.0 // indirect
+	golang.org/x/text v0.28.0 // indirect
 	google.golang.org/api v0.219.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250127172529-29210b9bc287 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250127172529-29210b9bc287 // indirect
-	google.golang.org/protobuf v1.36.4 // indirect
 )
