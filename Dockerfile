@@ -11,5 +11,5 @@ RUN mkdir -p /target/usr/bin \
     && cp -p ./emojivoto-web/target/emojivoto-vote-bot /target/usr/bin/ \
     && cp -p ./emojivoto-web/target/emojivoto-web /target/usr/bin/
 
-FROM debian:bookworm
+FROM debian:trixie
 COPY --from=build /target/ /
